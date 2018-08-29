@@ -15,6 +15,9 @@
 
 import warnings
 warnings.simplefilter('ignore')
+import os
+os.environ['MXNET_CUDNN_AUTOTUNE_DEFAULT']='0'
+
 import argparse, time, logging, os
 import numpy as np
 import mxnet as mx
