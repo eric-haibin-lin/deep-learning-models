@@ -19,8 +19,8 @@ from gluoncv.data import transforms as gcv_transforms
 parser = argparse.ArgumentParser(description='Train a model for image classification.')
 parser.add_argument('--batch-size', type=int, default=32,
                     help='training batch size per device (CPU/GPU).')
-parser.add_argument('--gpu', type=int, default=0,
-                    help='number of gpus to use.')
+parser.add_argument('--gpus', type=str, default=None,
+                    help='the list of gpus to use.')
 parser.add_argument('--model', type=str, default='resnet',
                     help='model to use. options are resnet and wrn. default is resnet.')
 parser.add_argument('-j', '--num-data-workers', dest='num_workers', default=4, type=int,
@@ -41,7 +41,7 @@ parser.add_argument('--lr-decay-epoch', type=str, default='40,60',
                     help='epoches at which learning rate decays. default is 40,60.')
 parser.add_argument('--drop-rate', type=float, default=0.0,
                     help='dropout rate for wide resnet. default is 0.')
-parser.add_argument('--mode', type=str,
+parser.add_argument('--mode', type=str, default='hybrid',
                     help='mode in which to train the model. options are imperative, hybrid')
 parser.add_argument('--save-period', type=int, default=10,
                     help='period in epoch of model saving.')
@@ -56,9 +56,10 @@ opt = parser.parse_args()
 batch_size = opt.batch_size
 classes = 10
 
-num_gpus = 1
+context = [mx.cpu()] if opt.gpus is None or opt.gpus == '' else \
+          [mx.gpu(int(x)) for x in opt.gpus.split(',')]
+num_gpus = len(context)
 batch_size *= max(1, num_gpus)
-context = [mx.gpu(opt.gpu)]
 num_workers = opt.num_workers
 
 lr_decay = opt.lr_decay
@@ -170,7 +171,7 @@ def train(epochs, ctx):
 
         if val_acc > best_val_score:
             best_val_score = val_acc
-            net.save_parameters('%s/%.4f-cifar-%s-%d-best.params'%(save_dir, best_val_score, model_name, epoch))
+            # net.save_parameters('%s/%.4f-cifar-%s-%d-best.params'%(save_dir, best_val_score, model_name, epoch))
 
         name, val_acc = test(ctx, val_data)
         logging.info('[Epoch %d] train=%f val=%f loss=%f time: %f' %
