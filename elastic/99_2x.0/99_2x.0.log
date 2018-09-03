@@ -1,0 +1,318 @@
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/block.py:421: UserWarning: load_params is deprecated. Please use load_parameters.
+  warnings.warn("load_params is deprecated. Please use load_parameters.")
+INFO:root:Namespace(batch_size=128, drop_rate=0.0, gpus='0,1', lr=0.02, lr_decay=0.1, lr_decay_epoch='50', lr_decay_period=0, mode='hybrid', model='cifar_resnet20_v1', momentum=0.9, num_epochs=100, num_workers=2, resume_from='baseline.0/cifar10-cifar_resnet20_v1-99.params', save_dir='99_2x.0', save_period=10, save_plot_dir='99_2x.0', wd=0.0001)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_conv0_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_batchnorm0_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_batchnorm0_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_batchnorm0_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_batchnorm0_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_conv0_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm0_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm0_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm0_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm0_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_conv1_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm1_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm1_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm1_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm1_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_conv2_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm2_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm2_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm2_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm2_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_conv3_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm3_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm3_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm3_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm3_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_conv4_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm4_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm4_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm4_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm4_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_conv5_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm5_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm5_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm5_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage1_batchnorm5_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_conv0_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm0_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm0_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm0_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm0_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_conv1_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm1_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm1_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm1_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm1_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_conv2_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm2_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm2_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm2_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm2_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_conv3_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm3_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm3_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm3_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm3_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_conv4_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm4_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm4_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm4_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm4_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_conv5_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm5_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm5_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm5_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm5_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_conv6_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm6_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm6_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm6_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage2_batchnorm6_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_conv0_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm0_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm0_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm0_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm0_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_conv1_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm1_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm1_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm1_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm1_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_conv2_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm2_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm2_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm2_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm2_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_conv3_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm3_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm3_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm3_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm3_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_conv4_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm4_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm4_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm4_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm4_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_conv5_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm5_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm5_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm5_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm5_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_conv6_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm6_gamma' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm6_beta' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm6_running_mean' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_stage3_batchnorm6_running_var' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_dense0_weight' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+/home/ubuntu/.local/lib/python3.6/site-packages/mxnet/gluon/parameter.py:811: UserWarning: Parameter 'cifarresnetv10_dense0_bias' is already initialized, ignoring. Set force_reinit=True to re-initialize.
+  v.initialize(None, ctx, init, force_reinit=force_reinit)
+[05:59:15] src/operator/nn/./cudnn/./cudnn_algoreg-inl.h:109: Running performance tests to find the best convolution algorithm, this can take a while... (setting env variable MXNET_CUDNN_AUTOTUNE_DEFAULT to 0 to disable)
+INFO:root:[Epoch 0] train=0.955288 val=0.909900 loss=0.130646 time: 15.844324
+INFO:root:[Epoch 1] train=0.966987 val=0.912800 loss=0.101232 time: 16.970424
+INFO:root:[Epoch 2] train=0.969752 val=0.913700 loss=0.091869 time: 15.513393
+INFO:root:[Epoch 3] train=0.970893 val=0.914600 loss=0.086166 time: 16.290810
+INFO:root:[Epoch 4] train=0.973978 val=0.913300 loss=0.078453 time: 16.433350
+INFO:root:[Epoch 5] train=0.974559 val=0.915300 loss=0.076833 time: 16.317055
+INFO:root:[Epoch 6] train=0.976643 val=0.916000 loss=0.072049 time: 16.016805
+INFO:root:[Epoch 7] train=0.976923 val=0.918200 loss=0.069594 time: 15.898713
+INFO:root:[Epoch 8] train=0.978325 val=0.917400 loss=0.066370 time: 16.225092
+INFO:root:[Epoch 9] train=0.978105 val=0.916800 loss=0.064463 time: 16.941434
+INFO:root:[Epoch 10] train=0.979347 val=0.917200 loss=0.060829 time: 15.711859
+INFO:root:[Epoch 11] train=0.980549 val=0.914200 loss=0.058353 time: 16.566756
+INFO:root:[Epoch 12] train=0.981110 val=0.916100 loss=0.056852 time: 16.314111
+INFO:root:[Epoch 13] train=0.981971 val=0.915600 loss=0.055025 time: 16.281877
+INFO:root:[Epoch 14] train=0.983413 val=0.915700 loss=0.051712 time: 16.372086
+INFO:root:[Epoch 15] train=0.983413 val=0.915100 loss=0.051582 time: 16.149069
+INFO:root:[Epoch 16] train=0.983954 val=0.916800 loss=0.049337 time: 16.202371
+INFO:root:[Epoch 17] train=0.984275 val=0.915100 loss=0.047665 time: 17.141816
+INFO:root:[Epoch 18] train=0.984215 val=0.916800 loss=0.047132 time: 17.243101
+INFO:root:[Epoch 19] train=0.985938 val=0.914500 loss=0.043608 time: 17.102587
+INFO:root:[Epoch 20] train=0.985096 val=0.915000 loss=0.045296 time: 16.496525
+INFO:root:[Epoch 21] train=0.985637 val=0.915200 loss=0.044293 time: 17.585852
+INFO:root:[Epoch 22] train=0.985517 val=0.915000 loss=0.044195 time: 16.530605
+INFO:root:[Epoch 23] train=0.985677 val=0.915400 loss=0.043131 time: 16.101037
+INFO:root:[Epoch 24] train=0.986639 val=0.913100 loss=0.040566 time: 16.199975
+INFO:root:[Epoch 25] train=0.986939 val=0.913600 loss=0.039788 time: 16.168446
+INFO:root:[Epoch 26] train=0.987780 val=0.914600 loss=0.038180 time: 16.112049
+INFO:root:[Epoch 27] train=0.987680 val=0.915600 loss=0.038024 time: 16.213222
+INFO:root:[Epoch 28] train=0.988622 val=0.914200 loss=0.036425 time: 16.588889
+INFO:root:[Epoch 29] train=0.988021 val=0.915200 loss=0.036283 time: 16.508898
+INFO:root:[Epoch 30] train=0.988321 val=0.916500 loss=0.036122 time: 17.070385
+INFO:root:[Epoch 31] train=0.988442 val=0.912500 loss=0.036225 time: 17.219766
+INFO:root:[Epoch 32] train=0.988401 val=0.914900 loss=0.035817 time: 16.691481
+INFO:root:[Epoch 33] train=0.989323 val=0.914600 loss=0.033637 time: 16.099925
+INFO:root:[Epoch 34] train=0.989183 val=0.913900 loss=0.033565 time: 16.412867
+INFO:root:[Epoch 35] train=0.988842 val=0.914800 loss=0.033022 time: 16.420527
+INFO:root:[Epoch 36] train=0.989623 val=0.916300 loss=0.032481 time: 16.604177
+INFO:root:[Epoch 37] train=0.989403 val=0.916100 loss=0.032335 time: 16.501276
+INFO:root:[Epoch 38] train=0.990284 val=0.914900 loss=0.031005 time: 17.124040
+INFO:root:[Epoch 39] train=0.990024 val=0.915100 loss=0.032147 time: 16.667556
+INFO:root:[Epoch 40] train=0.990284 val=0.913500 loss=0.031150 time: 16.172817
+INFO:root:[Epoch 41] train=0.989784 val=0.915100 loss=0.031433 time: 16.818184
+INFO:root:[Epoch 42] train=0.990865 val=0.912700 loss=0.029487 time: 16.257665
+INFO:root:[Epoch 43] train=0.991727 val=0.915600 loss=0.028214 time: 16.732890
+INFO:root:[Epoch 44] train=0.990405 val=0.915600 loss=0.029597 time: 16.298134
+INFO:root:[Epoch 45] train=0.990966 val=0.914900 loss=0.029629 time: 16.480377
+INFO:root:[Epoch 46] train=0.991146 val=0.912600 loss=0.028106 time: 17.387283
+INFO:root:[Epoch 47] train=0.990986 val=0.916700 loss=0.028224 time: 15.680750
+INFO:root:[Epoch 48] train=0.991246 val=0.914300 loss=0.027364 time: 16.737085
+INFO:root:[Epoch 49] train=0.991126 val=0.913300 loss=0.027740 time: 16.562319
+INFO:root:[Epoch 50] train=0.992508 val=0.916400 loss=0.025039 time: 16.272086
+INFO:root:[Epoch 51] train=0.993910 val=0.916400 loss=0.021695 time: 15.620079
+INFO:root:[Epoch 52] train=0.993730 val=0.917300 loss=0.020769 time: 17.363848
+INFO:root:[Epoch 53] train=0.994591 val=0.917000 loss=0.019335 time: 15.906706
+INFO:root:[Epoch 54] train=0.993890 val=0.916900 loss=0.021318 time: 16.274986
+INFO:root:[Epoch 55] train=0.994571 val=0.916800 loss=0.019229 time: 16.516599
+INFO:root:[Epoch 56] train=0.995052 val=0.916700 loss=0.019176 time: 16.862678
+INFO:root:[Epoch 57] train=0.994692 val=0.917900 loss=0.018878 time: 16.029810
+INFO:root:[Epoch 58] train=0.995152 val=0.917700 loss=0.018562 time: 16.460519
+INFO:root:[Epoch 59] train=0.995172 val=0.917700 loss=0.018623 time: 16.125346
+INFO:root:[Epoch 60] train=0.995453 val=0.918500 loss=0.017870 time: 16.468819
+INFO:root:[Epoch 61] train=0.995493 val=0.918200 loss=0.017319 time: 16.559696
+INFO:root:[Epoch 62] train=0.995292 val=0.917400 loss=0.017945 time: 16.321837
+INFO:root:[Epoch 63] train=0.995292 val=0.917000 loss=0.017634 time: 16.681901
+INFO:root:[Epoch 64] train=0.995713 val=0.918300 loss=0.017068 time: 16.616292
+INFO:root:[Epoch 65] train=0.994832 val=0.918200 loss=0.018753 time: 16.949345
+INFO:root:[Epoch 66] train=0.995272 val=0.917100 loss=0.017944 time: 16.878463
+INFO:root:[Epoch 67] train=0.996054 val=0.919100 loss=0.016063 time: 17.101316
+INFO:root:[Epoch 68] train=0.995693 val=0.918700 loss=0.016576 time: 16.271860
+INFO:root:[Epoch 69] train=0.995873 val=0.918900 loss=0.017097 time: 16.197585
+INFO:root:[Epoch 70] train=0.996374 val=0.918200 loss=0.016402 time: 16.191871
+INFO:root:[Epoch 71] train=0.995313 val=0.919500 loss=0.017500 time: 16.574674
+INFO:root:[Epoch 72] train=0.995593 val=0.919300 loss=0.017287 time: 17.514966
+INFO:root:[Epoch 73] train=0.995393 val=0.919400 loss=0.017295 time: 16.220946
+INFO:root:[Epoch 74] train=0.995593 val=0.919100 loss=0.017110 time: 16.071434
+INFO:root:[Epoch 75] train=0.995433 val=0.919000 loss=0.017144 time: 16.688287
+INFO:root:[Epoch 76] train=0.995833 val=0.919300 loss=0.017208 time: 15.897965
+INFO:root:[Epoch 77] train=0.995593 val=0.918100 loss=0.016488 time: 16.923682
+INFO:root:[Epoch 78] train=0.995673 val=0.919000 loss=0.016535 time: 15.989033
+INFO:root:[Epoch 79] train=0.995373 val=0.918200 loss=0.016884 time: 17.007055
+INFO:root:[Epoch 80] train=0.995954 val=0.919100 loss=0.015864 time: 16.024152
+INFO:root:[Epoch 81] train=0.995893 val=0.919300 loss=0.016142 time: 15.562337
+INFO:root:[Epoch 82] train=0.996274 val=0.918000 loss=0.015468 time: 16.503913
+INFO:root:[Epoch 83] train=0.995733 val=0.918500 loss=0.016304 time: 17.244910
+INFO:root:[Epoch 84] train=0.995773 val=0.919400 loss=0.016234 time: 15.815600
+INFO:root:[Epoch 85] train=0.995893 val=0.918200 loss=0.016164 time: 16.870789
+INFO:root:[Epoch 86] train=0.995833 val=0.917900 loss=0.016394 time: 16.593911
+INFO:root:[Epoch 87] train=0.996294 val=0.918200 loss=0.015441 time: 17.000162
+INFO:root:[Epoch 88] train=0.995833 val=0.917900 loss=0.016592 time: 17.503580
+INFO:root:[Epoch 89] train=0.995933 val=0.919000 loss=0.015864 time: 16.561616
+INFO:root:[Epoch 90] train=0.995974 val=0.917900 loss=0.016310 time: 16.679188
+INFO:root:[Epoch 91] train=0.996134 val=0.919700 loss=0.015631 time: 17.136495
+INFO:root:[Epoch 92] train=0.995433 val=0.917700 loss=0.016944 time: 15.554780
+INFO:root:[Epoch 93] train=0.995853 val=0.918000 loss=0.015911 time: 16.445442
+INFO:root:[Epoch 94] train=0.996294 val=0.916600 loss=0.015265 time: 16.731761
+INFO:root:[Epoch 95] train=0.995733 val=0.918500 loss=0.015708 time: 16.723450
+INFO:root:[Epoch 96] train=0.995913 val=0.919100 loss=0.015597 time: 17.565757
+INFO:root:[Epoch 97] train=0.996234 val=0.918700 loss=0.014980 time: 16.448518
+INFO:root:[Epoch 98] train=0.996014 val=0.918700 loss=0.015551 time: 17.466519
+INFO:root:[Epoch 99] train=0.996014 val=0.918100 loss=0.015597 time: 16.440717
