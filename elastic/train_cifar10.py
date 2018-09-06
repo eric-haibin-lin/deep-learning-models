@@ -48,7 +48,8 @@ parser.add_argument('--save-period', type=int, default=10,
 parser.add_argument('--save-dir', type=str, default='params',
                     help='directory of saved models')
 parser.add_argument('--resume-from', type=str,
-                    help='resume training from the model')
+                    help='resume training from the model with resume_from.params '
+                         'and resume_from.states')
 parser.add_argument('--save-plot-dir', type=str, default='.',
                     help='the path to save the history plot')
 opt = parser.parse_args()
@@ -73,7 +74,7 @@ else:
     kwargs = {'classes': classes}
 net = get_model(model_name, **kwargs)
 if opt.resume_from:
-    net.load_params(opt.resume_from, ctx = context)
+    net.load_params('%s.params'%opt.resume_from, ctx=context)
 optimizer = 'nag'
 
 save_period = opt.save_period
@@ -125,6 +126,8 @@ def train(epochs, ctx):
 
     trainer = gluon.Trainer(net.collect_params(), optimizer,
                             {'learning_rate': opt.lr, 'wd': opt.wd, 'momentum': opt.momentum})
+    if opt.resume_from:
+        trainer.load_states('%s.states'%opt.resume_from)
     metric = mx.metric.Accuracy()
     train_metric = mx.metric.Accuracy()
     loss_fn = gluon.loss.SoftmaxCrossEntropyLoss()
@@ -172,6 +175,7 @@ def train(epochs, ctx):
         if val_acc > best_val_score:
             best_val_score = val_acc
             net.save_parameters('%s/%.4f-cifar-%s-%d-best.params'%(save_dir, best_val_score, model_name, epoch))
+            trainer.save_states('%s/%.4f-cifar-%s-%d-best.states'%(save_dir, best_val_score, model_name, epoch))
 
         name, val_acc = test(ctx, val_data)
         logging.info('[Epoch %d] train=%f val=%f loss=%f time: %f' %
@@ -179,6 +183,7 @@ def train(epochs, ctx):
 
         if save_period and save_dir and (epoch + 1) % save_period == 0:
             net.save_parameters('%s/cifar10-%s-%d.params'%(save_dir, model_name, epoch))
+            trainer.save_states('%s/cifar10-%s-%d.states'%(save_dir, model_name, epoch))
 
     if save_period and save_dir:
         net.save_parameters('%s/cifar10-%s-%d.params'%(save_dir, model_name, epochs-1))
