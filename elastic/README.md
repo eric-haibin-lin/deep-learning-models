@@ -44,6 +44,21 @@ best acc = 0.9190, 0.9184
 
 python train_cifar10.py --num-epochs 200 --mode hybrid --gpus 0,1,2,3 -j 2 --batch-size 128 --wd 0.0001 --lr 0.4 --lr-decay 0.1 --lr-decay-epoch 100,150 --model cifar_resnet20_v1 --save-dir='bs_512.0' --save-plot-dir='bs_512.0' 2>&1 | tee bs_512.0.log
 
+#### 4 GPUs with warmup = 5
+
+best acc = 0.9200
+warmup = 5
+```
+bs_512_warm_5.0.log
+```
+
+#### 4 GPUs with warmup = 10
+
+best acc = 0.9205
+warmup = 10
+```
+bs_512_warm_10.0.log
+```
 
 #### 2 GPUs
 
@@ -57,15 +72,48 @@ python train_cifar10.py --num-epochs 200 --mode hybrid --gpus 0,1 -j 2 --batch-s
 
 ### multi-gpu consistent batch size
 
-#### 4 GPUs
+#### 1 GPUs
 
 M = 512
 N = 1
 lr = 0.4
-best acc = 0.9155
+best acc = 0.9155, 0.9171, 0.9201
 
 ```
 batch_size=512, drop_rate=0.0, gpus='2', lr=0.4, lr_decay=0.1, lr_decay_epoch='100,150', lr_decay_period=0, mode='hybrid', model='cifar_resnet20_v1', momentum=0.9, num_epochs=200, num_workers=2, resume_from=None, save_dir='bs_512_gpu_1.0', save_period=10, save_plot_dir='bs_512_gpu_1.0', wd=0.0001
+```
+
+#### 1 GPUs with warm up = 10, last-gamma
+
+warmup = 10, --last-gamma
+best acc = 0.9192
+
+```
+bs_512_gpu_1_gamma_warm_10.0
+```
+
+#### 1 GPUs with warm up = 5, last-gamma
+
+warmup = 5, --last-gamma
+best acc = 0.9195
+
+```
+bs_512_gpu_1_gamma_warm_5.0
+```
+
+
+#### 1 GPUs with warm up = 15
+0.9231
+
+#### 1 GPUs with warm up = 5
+0.9188
+
+#### 1 GPUs with warm up = 10
+
+warmup = 10
+best acc = 0.9169, 0.9199,
+```
+bs_512_gpu_1_warm_10.0/log
 ```
 
 #### 2 GPUs

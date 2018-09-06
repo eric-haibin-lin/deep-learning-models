@@ -12,7 +12,7 @@ from mxnet.gluon import nn
 from mxnet.gluon.data.vision import transforms
 
 from gluoncv.model_zoo import get_model
-from gluoncv.utils import makedirs, TrainingHistory
+from gluoncv.utils import makedirs, TrainingHistory, LRScheduler
 from gluoncv.data import transforms as gcv_transforms
 
 # CLI
@@ -35,10 +35,12 @@ parser.add_argument('--wd', type=float, default=0.0001,
                     help='weight decay rate. default is 0.0001.')
 parser.add_argument('--lr-decay', type=float, default=0.1,
                     help='decay rate of learning rate. default is 0.1.')
-parser.add_argument('--lr-decay-period', type=int, default=0,
-                    help='period in epoch for learning rate decays. default is 0 (has no effect).')
 parser.add_argument('--lr-decay-epoch', type=str, default='40,60',
                     help='epoches at which learning rate decays. default is 40,60.')
+parser.add_argument('--warmup-epochs', type=int, default=0,
+                    help='number of warmup epochs.')
+parser.add_argument('--last-gamma', action='store_true',
+                    help='whether to init gamma of the last BN layer in each bottleneck to 0.')
 parser.add_argument('--drop-rate', type=float, default=0.0,
                     help='dropout rate for wide resnet. default is 0.')
 parser.add_argument('--mode', type=str, default='hybrid',
@@ -63,8 +65,13 @@ num_gpus = len(context)
 batch_size *= max(1, num_gpus)
 num_workers = opt.num_workers
 
-lr_decay = opt.lr_decay
+num_training_samples = len(gluon.data.vision.CIFAR10(train=True))
+num_batches = num_training_samples // batch_size
 lr_decay_epoch = [int(i) for i in opt.lr_decay_epoch.split(',')] + [np.inf]
+lr_scheduler = LRScheduler(mode='step', baselr=opt.lr,
+                           niters=num_batches, nepochs=opt.num_epochs,
+                           step=lr_decay_epoch, step_factor=opt.lr_decay,
+                           warmup_epochs=opt.warmup_epochs)
 
 model_name = opt.model
 if model_name.startswith('cifar_wideresnet'):
@@ -72,6 +79,10 @@ if model_name.startswith('cifar_wideresnet'):
               'drop_rate': opt.drop_rate}
 else:
     kwargs = {'classes': classes}
+
+if opt.last_gamma:
+    kwargs['last_gamma'] = True
+
 net = get_model(model_name, **kwargs)
 if opt.resume_from:
     net.load_params('%s.params'%opt.resume_from, ctx=context)
@@ -125,7 +136,8 @@ def train(epochs, ctx):
         batch_size=batch_size, shuffle=False, num_workers=num_workers)
 
     trainer = gluon.Trainer(net.collect_params(), optimizer,
-                            {'learning_rate': opt.lr, 'wd': opt.wd, 'momentum': opt.momentum})
+                            {'learning_rate': opt.lr, 'wd': opt.wd, 'momentum': opt.momentum,
+                             'lr_scheduler': lr_scheduler})
     if opt.resume_from:
         trainer.load_states('%s.states'%opt.resume_from)
     metric = mx.metric.Accuracy()
@@ -134,7 +146,6 @@ def train(epochs, ctx):
     train_history = TrainingHistory(['training-error', 'validation-error'])
 
     iteration = 0
-    lr_decay_count = 0
 
     best_val_score = 0
 
@@ -144,11 +155,6 @@ def train(epochs, ctx):
         metric.reset()
         train_loss = 0
         num_batch = len(train_data)
-        alpha = 1
-
-        if epoch == lr_decay_epoch[lr_decay_count]:
-            trainer.set_learning_rate(trainer.learning_rate*lr_decay)
-            lr_decay_count += 1
 
         for i, batch in enumerate(train_data):
             data = gluon.utils.split_and_load(batch[0], ctx_list=ctx, batch_axis=0)
@@ -159,6 +165,7 @@ def train(epochs, ctx):
                 loss = [loss_fn(yhat, y) for yhat, y in zip(output, label)]
             for l in loss:
                 l.backward()
+            lr_scheduler.update(i, epoch)
             trainer.step(batch_size)
             train_loss += sum([l.sum().asscalar() for l in loss])
 
@@ -178,8 +185,8 @@ def train(epochs, ctx):
             trainer.save_states('%s/%.4f-cifar-%s-%d-best.states'%(save_dir, best_val_score, model_name, epoch))
 
         name, val_acc = test(ctx, val_data)
-        logging.info('[Epoch %d] train=%f val=%f loss=%f time: %f' %
-            (epoch, acc, val_acc, train_loss, time.time()-tic))
+        logging.info('[Epoch %d] train=%f val=%f loss=%f time: %f lr: %f' %
+            (epoch, acc, val_acc, train_loss, time.time()-tic, trainer.learning_rate))
 
         if save_period and save_dir and (epoch + 1) % save_period == 0:
             net.save_parameters('%s/cifar10-%s-%d.params'%(save_dir, model_name, epoch))
