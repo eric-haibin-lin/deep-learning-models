@@ -40,7 +40,7 @@ best acc = 0.9186
 M = 128
 N = 4
 lr = 0.4
-best acc = 0.9190
+best acc = 0.9190, 0.9184
 
 python train_cifar10.py --num-epochs 200 --mode hybrid --gpus 0,1,2,3 -j 2 --batch-size 128 --wd 0.0001 --lr 0.4 --lr-decay 0.1 --lr-decay-epoch 100,150 --model cifar_resnet20_v1 --save-dir='bs_512.0' --save-plot-dir='bs_512.0' 2>&1 | tee bs_512.0.log
 
